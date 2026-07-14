@@ -308,7 +308,54 @@
 	<section>
 		<h1>P-String Data</h1>
 		<p>
+			The <strong>p-string</strong> <strong>data</strong> is a series of bytes.
 		</p>
+		<p>
+			In general, the bytes can be any type of data.
+			But, often they are what is often called <em>text data</em> (rather than <em>control characters</em>).
+			(Although a <strong>p-string</strong> could contain any <em>control character</em>.)
+		</p>
+	</section>
+	<section>
+		<h1>Maximum Size</h1>
+		<p>
+			A <strong>p-string</strong> has a <em>maximum size</em>.
+			The <em>maximum size</em> by the <strong>p-string</strong> is determined by the type of <strong>length prefix</strong>.
+		</p>
+		<table>
+			<thead>
+				<tr>
+					<th>length prefix type</th>
+					<th>maximum size</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>
+						8-bit
+					</td>
+					<td>
+						255 = 2<sup>8</sup> - 1
+					</td>
+				</tr>
+				<tr>
+					<td>
+						16-bit little-endian
+					</td>
+					<td>
+						65535 = 2<sup>16</sup> - 1
+					</td>
+				</tr>
+				<tr>
+					<td>
+						16-bit big-endian
+					</td>
+					<td>
+						65535 = 2<sup>16</sup> - 1
+					</td>
+				</tr>
+			</tbody>
+		</table>
 	</section>
 	<footer>
 		<include src="author.html"></include>
