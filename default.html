@@ -94,6 +94,46 @@
 			And, of course, once the <strong>length prefix</strong> is <em>more-than</em> one byte in size, the <strong>length prefix</strong> also has an endianness — little-endian, big-endian, etc.
 		</p>
 		<p>
+			So, in general, one could see <strong>p-strings</strong>, with different typs of <strong>length prefixes</strong>, such as:
+		</p>
+		<ul>
+			<li>
+				8-bit
+			</li>
+			<li>
+				16-bit little-endian
+			</li>
+			<li>
+				16-bit big-endian
+			</li>
+			<li>
+				32-bit little-endian
+			</li>
+			<li>
+				32-bit big-endian
+			</li>
+			<li>
+				64-bit little-endian
+			</li>
+			<li>
+				64-bit big-endian
+			</li>
+		</ul>
+		<p>
+			Perhaps one day we will also see:
+		</p>
+		<ul>
+			<li>
+				128-bit little-endian
+			</li>
+			<li>
+				128-bit big-endian
+			</li>
+			<li>
+				<em>etc</em>
+			</li>
+		</ul>
+		<p>
 			Here are some examples:
 		</p>
 	<figure>
@@ -267,6 +307,8 @@
 	</section>
 	<section>
 		<h1>P-String Data</h1>
+		<p>
+		</p>
 	</section>
 	<footer>
 		<include src="author.html"></include>
