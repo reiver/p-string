@@ -326,7 +326,8 @@
 			<thead>
 				<tr>
 					<th>length prefix type</th>
-					<th>maximum size</th>
+					<th>data maximum size<br />(measured in number of bytes)</th>
+					<th>total maximum size<br />(measured in number of bytes)</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -337,13 +338,19 @@
 					<td>
 						255 = 2<sup>8</sup> - 1
 					</td>
+					<td>
+						256 = (2<sup>8</sup> - 1) + 1
+					</td>
 				</tr>
 				<tr>
 					<td>
 						16-bit little-endian
 					</td>
 					<td>
-						65535 = 2<sup>16</sup> - 1
+						65,535 = 2<sup>16</sup> - 1
+					</td>
+					<td>
+						65,537 = (2<sup>16</sup> - 1) + 2
 					</td>
 				</tr>
 				<tr>
@@ -351,7 +358,54 @@
 						16-bit big-endian
 					</td>
 					<td>
-						65535 = 2<sup>16</sup> - 1
+						65,535 = 2<sup>16</sup> - 1
+					</td>
+					<td>
+						65,537 = (2<sup>16</sup> - 1) + 2
+					</td>
+				</tr>
+				<tr>
+					<td>
+						32-bit little-endian
+					</td>
+					<td>
+						4,294,967,295 = 2<sup>32</sup> - 1
+					</td>
+					<td>
+						4,294,967,299 = (2<sup>32</sup> - 1) + 4
+					</td>
+				</tr>
+				<tr>
+					<td>
+						32-bit big-endian
+					</td>
+					<td>
+						4,294,967,295 = 2<sup>32</sup> - 1
+					</td>
+					<td>
+						4,294,967,299 = (2<sup>32</sup> - 1) + 4
+					</td>
+				</tr>
+				<tr>
+					<td>
+						64-bit little-endian
+					</td>
+					<td>
+						18,446,744,073,709,551,615 = 2<sup>64</sup> - 1
+					</td>
+					<td>
+						18,446,744,073,709,551,623 = (2<sup>64</sup> - 1) + 8
+					</td>
+				</tr>
+				<tr>
+					<td>
+						64-bit big-endian
+					</td>
+					<td>
+						18,446,744,073,709,551,615 = 2<sup>64</sup> - 1
+					</td>
+					<td>
+						18,446,744,073,709,551,623 = (2<sup>64</sup> - 1) + 8
 					</td>
 				</tr>
 			</tbody>
