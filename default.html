@@ -50,7 +50,7 @@
 				<td><code>'l'</code></td>
 				<td><code>'l'</code></td>
 				<td><code>'o'</code></td>
-				<td><code>' '</code></td>
+				<td><code><span style="white-space:nowrap;">' '</span></code></td>
 				<td><code>'w'</code></td>
 				<td><code>'o'</code></td>
 				<td><code>'r'</code></td>
@@ -84,7 +84,7 @@
 		</p>
 	</section>
 	<section>
-		<h1>length prefix</h1>
+		<h1>P-String Length Prefix</h1>
 		<p>
 			With the original <strong>p-string</strong>, the <strong>length prefix</strong> was a single <strong>8-bit byte</strong>.
 			This was because of the limitations of the of the computer hardware of the era when the <strong>p-string</strong> was introduced to the <strong>Pascal programming language</strong>.
@@ -96,9 +96,93 @@
 		<p>
 			Here are some examples:
 		</p>
+	<figure>
+		<table>
+			<thead>
+				<tr>
+					<th rowspan="2">note</th>
+					<th colspan="20">byte number</th>
+				</tr>
+				<tr>
+					<th>0</th>
+					<th>1</th>
+					<th>2</th>
+					<th>3</th>
+					<th>4</th>
+					<th>5</th>
+					<th>6</th>
+					<th>7</th>
+					<th>8</th>
+					<th>9</th>
+					<th>10</th>
+					<th>11</th>
+					<th>12</th>
+					<th>13</th>
+					<th>14</th>
+					<th>15</th>
+					<th>16</th>
+					<th>17</th>
+					<th>18</th>
+					<th>20</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>8-bit p-string</td>
+					<td><code>12</code></td>
+					<td><code>'H'</code></td>
+					<td><code>'e'</code></td>
+					<td><code>'l'</code></td>
+					<td><code>'l'</code></td>
+					<td><code>'o'</code></td>
+					<td><code><span style="white-space:nowrap;">' '</span></code></td>
+					<td><code>'w'</code></td>
+					<td><code>'o'</code></td>
+					<td><code>'r'</code></td>
+					<td><code>'l'</code></td>
+					<td><code>'d'</code></td>
+					<td><code>'!'</code></td>
+				</tr>
+				<tr>
+					<td>16-bit little-endian p-string</td>
+					<td><code>12</code></td>
+					<td><code>0</code></td>
+					<td><code>'H'</code></td>
+					<td><code>'e'</code></td>
+					<td><code>'l'</code></td>
+					<td><code>'l'</code></td>
+					<td><code>'o'</code></td>
+					<td><code><span style="white-space:nowrap;">' '</span></code></td>
+					<td><code>'w'</code></td>
+					<td><code>'o'</code></td>
+					<td><code>'r'</code></td>
+					<td><code>'l'</code></td>
+					<td><code>'d'</code></td>
+					<td><code>'!'</code></td>
+				</tr>
+				<tr>
+					<td>16-bit big-endian p-string</td>
+					<td><code>0</code></td>
+					<td><code>12</code></td>
+					<td><code>'H'</code></td>
+					<td><code>'e'</code></td>
+					<td><code>'l'</code></td>
+					<td><code>'l'</code></td>
+					<td><code>'o'</code></td>
+					<td><code><span style="white-space:nowrap;">' '</span></code></td>
+					<td><code>'w'</code></td>
+					<td><code>'o'</code></td>
+					<td><code>'r'</code></td>
+					<td><code>'l'</code></td>
+					<td><code>'d'</code></td>
+					<td><code>'!'</code></td>
+				</tr>
+			</tbody>
+		</table>
+	</figure>
 	</section>
 	<section>
-		<h1></h1>
+		<h1>P-String Data</h1>
 	</section>
 	<footer>
 		<include src="author.html"></include>
