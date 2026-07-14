@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" vocab="https://schema.org/" typeof="TechArticle" class="article">
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="/text-readability/readmode.css" />
+<title>p-string</title>
+<meta name="author" content="Charles Iliya Krempeaux" />
+</head>
+<body>
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+	<ol>
+		<li><a href="/">Home</a></li>
+		<li><a href="./" aria-current="page">p-string</a></li>
+	</ol>
+</nav>
+
+<main>
+<article>
+	<header>
+		<hgroup>
+			<h1 property="headline">p-string</h1>
+			<p>
+				length prefixed data string
+			</p>
+		</hgroup>
+		<p>
+			by <a href="https://reiver.link/">Charles Iliya Krempeaux</a>
+		</p>
+	</header>
+	<p>
+		A <strong>p-string</strong> is a type of <a href="/data-string/">data string</a> where there are 2 parts of the string:
+	</p>
+	<ol>
+		<li>
+			a <strong>length prefix</strong>, and
+		</li>
+		<li>
+			the actual <strong>data</strong> of the string.
+		</li>
+	</ol>
+	<p>
+		For example:
+	</p>
+	<figure>
+		<table>
+			<tr>
+				<td><code>12</code></td>
+				<td><code>'H'</code></td>
+				<td><code>'e'</code></td>
+				<td><code>'l'</code></td>
+				<td><code>'l'</code></td>
+				<td><code>'o'</code></td>
+				<td><code>' '</code></td>
+				<td><code>'w'</code></td>
+				<td><code>'o'</code></td>
+				<td><code>'r'</code></td>
+				<td><code>'l'</code></td>
+				<td><code>'d'</code></td>
+				<td><code>'!'</code></td>
+			</tr>
+		</table>
+		<figcaption>
+			<p>
+				An example <strong>p-string</strong> whose <strong>length prefix</strong> is <code>12</code>, an who <strong>data</strong> is “<code>Hello world!</code>”.
+			</p>
+			<p>
+				Note that the number of characters (including the space character) in “<code>Hello world!</code>” is <em>12</em>, which is the same value the <strong>length prefix</strong>.
+			</p>
+		</figcaption>
+	</figure>
+	<section>
+		<h1>Name</h1>
+		<p>
+			The name “<strong>p-string</strong>” is named after the <strong>Pascal programming language</strong>.
+			The “p” in “p-string” is short of “pascal”.
+		</p>
+		<p>
+			In fact, an alternative name for “<strong>p-string</strong>” is: <strong>pascal-string</strong>.
+		</p>
+		<p>
+			Although note that, the original <strong>Pascal programming language</strong> did not seem to have the <strong>p-string</strong>.
+			The <strong>p-string</strong> seems to have been added to the <strong>Pascal programming language</strong> later.
+			A <strong>data string</strong> seems to have been added to the<strong>Pascal programming language</strong> due to being influenced by the <strong><abbr title="Beginner's All-purpose Symbolic Instruction Code">BASIC</abbr> programming language</strong>.
+		</p>
+	</section>
+	<section>
+		<h1>length prefix</h1>
+		<p>
+			With the original <strong>p-string</strong>, the <strong>length prefix</strong> was a single <strong>8-bit byte</strong>.
+			This was because of the limitations of the of the computer hardware of the era when the <strong>p-string</strong> was introduced to the <strong>Pascal programming language</strong>.
+		</p>
+		<p>
+			But, as the <strong>p-string</strong> was used in other places the length prefixed increased in size.
+			And, of course, once the <strong>length prefix</strong> is <em>more-than</em> one byte in size, the <strong>length prefix</strong> also has an endianness — little-endian, big-endian, etc.
+		</p>
+		<p>
+			Here are some examples:
+		</p>
+	</section>
+	<section>
+		<h1></h1>
+	</section>
+	<footer>
+		<include src="author.html"></include>
+		<include src="license.html"></include>
+	</footer>
+</article>
+</main>
+</body>
+</html>
+
